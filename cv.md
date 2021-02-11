@@ -12,3 +12,7 @@ Vocational psychologist
   * Django
   * HTML5
   * CSS
+
+### English level:
+
+B2/C1 (IELTS: Reading: 9.0, Listening: 8.5, Writing: 6.5, Speaking: 6.5)
