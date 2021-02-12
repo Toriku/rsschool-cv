@@ -29,7 +29,35 @@
         <li>Telegram: @RealToriku</li>
     </ul>
 <hr>
+<h3>Skills:</h1>
+    <ul>
+<li>Python</li>
+<li>Django</li>
+<li>HTML5</li>
+<li>CSS</li>
+    </ul>
+<hr>
+<h3>English level:</h1>
+    <p>B2/C1 (IELTS: Reading: 9.0, Listening: 8.5, Writing: 6.5, Speaking: 6.5)</p>
+    <hr>
+<h3>Code example:</h3>
+<pre class="code_example">
+    @login_required
+    def take_test_view(request, test_slug):
+        user = request.user
+        test = get_object_or_404(Test, slug=test_slug)
+        
+        if not FullProftestResult.objects.filter(user=user).exists():
+            return redirect("profile")
+    
+        if test.id in user.done_proftest_tests:
+            return redirect("profile")
+            
+        else:
+            context = {"test": test}
+            return render(request, "take_test.html", context)
 
+</pre>
 </div>
     </div>
 
