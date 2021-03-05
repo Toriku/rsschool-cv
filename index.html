@@ -14,14 +14,14 @@
 
 <body>
     <div class="container">
-<div class="resume">
+<header class="resume">
     <img src="cat_avatar.jpg" alt="Аватарка" class="avatar">
     <div class="header">
         <h1>Anatoly Kravtsov</h1>
             <p>Vocational Psychologist</p>
     </div>
-</div>
-<div class="main_info">
+</header>
+<section class="main_info">
 <h3>Contact info:</h3>
     <ul>
         <li><a href="https://github.com/Toriku/">Github</a></li>
@@ -29,6 +29,7 @@
         <li>Telegram: @RealToriku</li>
     </ul>
 <hr>
+<summary>
 <h3>Skills:</h3>
     <ul>
 <li>Python</li>
@@ -36,10 +37,16 @@
 <li>HTML5</li>
 <li>CSS</li>
     </ul>
+</summary>
 <hr>
+<details>
 <h3>English level:</h3>
     <p>B2/C1 (IELTS: Reading: 9.0, Listening: 8.5, Writing: 6.5, Speaking: 6.5)</p>
+    <h3>About:</h3>
+    <p>Here should be information about me. Don't want to show it here though. </p>
+</details>
     <hr>
+    <article>
 <h3>Code example:</h3>
 <pre class="code_example">
     @login_required
@@ -58,7 +65,8 @@
             return render(request, "take_test.html", context)
 
 </pre>
-</div>
+</article>
+</section>
     </div>
 
 </body>
